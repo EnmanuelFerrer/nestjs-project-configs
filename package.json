@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "main": "index.js",
   "scripts": {
-    "prepare": "node scripts/setup.js"
+    "postinstall": "node scripts/setup.js"
   },
   "keywords": [
     "nestjs",
