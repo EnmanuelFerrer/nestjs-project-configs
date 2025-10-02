@@ -2,6 +2,12 @@
   "name": "nestjs-project-configs",
   "version": "1.0.8",
   "main": "index.js",
+  "files": [
+    "eslint.config.js",
+    "prettier.config.js",
+    "lint-staged.config.js",
+    "scripts/setup.js"
+  ],
   "scripts": {
     "postinstall": "node scripts/setup.js"
   },
