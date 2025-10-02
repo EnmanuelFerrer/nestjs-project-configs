@@ -9,7 +9,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "prettier",
+    "prettier"
   ],
   rules: {
     "@typescript-eslint/no-explicit-any": "warn",
@@ -17,14 +17,10 @@ module.exports = {
     "import/order": [
       "error",
       {
-        groups: [
-          ["builtin", "external"],
-          "internal",
-          ["parent", "sibling", "index"],
-        ],
+        groups: [["builtin", "external"], "internal", ["parent", "sibling", "index"]],
         "newlines-between": "always",
-        alphabetize: { order: "asc", caseInsensitive: true },
-      },
-    ],
-  },
+        alphabetize: { order: "asc", caseInsensitive: true }
+      }
+    ]
+  }
 };

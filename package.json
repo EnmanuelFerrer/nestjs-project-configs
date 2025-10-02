@@ -6,9 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Enmanuel Ferrer",
+  "license": "MIT",
+  "description": "NestJS project configs",
   "peerDependencies": {
     "eslint": "^9.0.0",
     "prettier": "^3.0.0",

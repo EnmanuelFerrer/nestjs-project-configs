@@ -10,40 +10,22 @@ function writeFileIfNotExists(fileName, content) {
   }
 }
 
-writeFileIfNotExists(
-  ".eslintrc.js",
-  `module.exports = require("nestjs-project-configs/eslint.config.js");`,
-);
-writeFileIfNotExists(
-  ".prettierrc.js",
-  `module.exports = require("nestjs-project-configs/prettier.config.js");`,
-);
-writeFileIfNotExists(
-  ".stylelintrc.js",
-  `module.exports = require("nestjs-project-configs/stylelint.config.js");`,
-);
-writeFileIfNotExists(
-  "lint-staged.config.js",
-  `module.exports = require("nestjs-project-configs/lint-staged.config.js");`,
-);
+writeFileIfNotExists(".eslintrc.js", `module.exports = require("nestjs-project-configs/eslint.config.js");`);
+writeFileIfNotExists(".prettierrc.js", `module.exports = require("nestjs-project-configs/prettier.config.js");`);
+writeFileIfNotExists(".stylelintrc.js", `module.exports = require("nestjs-project-configs/stylelint.config.js");`);
+writeFileIfNotExists("lint-staged.config.js", `module.exports = require("nestjs-project-configs/lint-staged.config.js");`);
 
 // Husky hooks
 try {
   execSync("npx husky install", { stdio: "inherit" });
-  writeFileIfNotExists(
-    ".husky/pre-commit",
-    `#!/bin/sh
+  writeFileIfNotExists(".husky/pre-commit", `#!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 npx lint-staged
-`,
-  );
-  writeFileIfNotExists(
-    ".husky/pre-push",
-    `#!/bin/sh
+`);
+  writeFileIfNotExists(".husky/pre-push", `#!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 npm run test
-`,
-  );
+`);
   console.log("✅ Husky hooks installed");
 } catch (e) {
   console.log("⚠️ Could not setup husky, run 'npx husky install' manually");
