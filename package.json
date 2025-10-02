@@ -9,8 +9,11 @@
     "stylelint.config.js",
     "scripts/setup.js"
   ],
+  "bin": {
+    "setup-nestjs-configs": "./setup.js"
+  },
   "scripts": {
-    "postinstall": "node scripts/setup.js"
+    "postinstall": "node ./setup.js"
   },
   "keywords": [
     "nestjs",
