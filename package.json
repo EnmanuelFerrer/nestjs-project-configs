@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node scripts/setup.js"
+    "prepare": "node scripts/setup.js"
   },
   "keywords": [],
   "author": "Enmanuel Ferrer",
