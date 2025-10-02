@@ -1,6 +1,6 @@
 {
   "name": "nestjs-project-configs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "scripts": {
     "prepare": "node scripts/setup.js"
