@@ -18,5 +18,13 @@
     "@typescript-eslint/parser": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "jest": "^29.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EnmanuelFerrer/nestjs-project-configs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EnmanuelFerrer/nestjs-project-configs/issues"
+  },
+  "homepage": "https://github.com/EnmanuelFerrer/nestjs-project-configs#readme"
 }
