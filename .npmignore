@@ -1,4 +1,4 @@
-# Ignorar archivos de desarrollo y configuración personal
+# Ignorar dependencias y archivos de desarrollo
 node_modules/
 *.log
 *.ts
@@ -24,4 +24,5 @@ docker-compose.yml
 dist/
 build/
 
-# Incluir todo lo demás (scripts/ y archivos de configs se incluyen explícitamente en "files")
+# Ignorar Husky, ya que se configura en el proyecto que instala el paquete
+.husky/
