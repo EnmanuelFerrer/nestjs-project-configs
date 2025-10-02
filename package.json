@@ -10,10 +10,10 @@
     "scripts/setup.js"
   ],
   "bin": {
-    "setup-nestjs-configs": "./setup.js"
+    "setup-nestjs-configs": "./scripts/setup.js"
   },
   "scripts": {
-    "postinstall": "node ./setup.js"
+    "postinstall": "node scripts/setup.js"
   },
   "keywords": [
     "nestjs",
