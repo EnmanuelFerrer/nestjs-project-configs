@@ -1,6 +1,6 @@
 {
   "name": "nestjs-project-configs",
-  "version": "1.0.9",
+  "version": "1.0.10-0",
   "main": "index.js",
   "files": [
     "eslint.config.js",
