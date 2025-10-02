@@ -5,7 +5,16 @@
   "scripts": {
     "prepare": "node scripts/setup.js"
   },
-  "keywords": [],
+  "keywords": [
+    "nestjs",
+    "eslint",
+    "prettier",
+    "stylelint",
+    "husky",
+    "lint-staged",
+    "tests",
+    "dev-config"
+  ],
   "author": "Enmanuel Ferrer",
   "license": "MIT",
   "description": "NestJS project configs",
