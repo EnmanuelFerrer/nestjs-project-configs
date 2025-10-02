@@ -1,0 +1,27 @@
+# Ignorar archivos de desarrollo y configuración personal
+node_modules/
+*.log
+*.ts
+*.md
+.vscode/
+.idea/
+.DS_Store
+
+# Ignorar tests y scripts de desarrollo que no se usan en postinstall
+tests/
+__tests__/
+*.spec.js
+*.test.js
+
+# Ignorar configuraciones de CI/CD y scripts internos
+.gitignore
+.npmignore
+.github/
+.circleci/
+docker-compose.yml
+
+# Ignorar carpetas de build locales (si las hay)
+dist/
+build/
+
+# Incluir todo lo demás (scripts/ y archivos de configs se incluyen explícitamente en "files")
