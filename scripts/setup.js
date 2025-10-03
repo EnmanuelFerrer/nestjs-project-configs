@@ -22,16 +22,18 @@ writeFileIfNotExists("lint-staged.config.js", `module.exports = require("nestjs-
 try {
   console.log("Setting up Husky...");
   
-  // 1. Initialize husky in the user's project
+  // 1. Instala e inicializa Husky en el proyecto del usuario.
+  // El comando `npx husky` es el correcto para la inicialización.
   execSync("npx husky", { stdio: "inherit" });
 
-  // 2. Use 'husky set' to create the pre-commit hook (it handles permissions)
-  execSync('npx husky set .husky/pre-commit "npx lint-staged"', { stdio: "inherit" });
+  // 2. Usa 'husky add' para crear el hook pre-commit (antes 'set')
+  execSync('npx husky add .husky/pre-commit "npx lint-staged"', { stdio: "inherit" });
   
-  // 3. Use 'husky set' to create the pre-push hook
-  execSync('npx husky set .husky/pre-push "npm run test"', { stdio: "inherit" });
+  // 3. Usa 'husky add' para crear el hook pre-push (antes 'set')
+  execSync('npx husky add .husky/pre-push "npm run test"', { stdio: "inherit" });
 
   console.log("✅ Husky hooks installed successfully!");
 } catch (e) {
+  // El mensaje de error sigue siendo válido
   console.error("⚠️ Could not setup Husky automatically. Please run 'npx husky' and configure hooks manually.", e);
 }
