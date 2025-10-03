@@ -13,10 +13,10 @@ function writeFileIfNotExists(fileName, content) {
 }
 
 // Generar archivos de configuración
-writeFileIfNotExists(".eslintrc.js", `module.exports = require("nestjs-project-configs/eslint.config.js");`);
-writeFileIfNotExists(".prettierrc.js", `module.exports = require("nestjs-project-configs/prettier.config.js");`);
-writeFileIfNotExists(".stylelintrc.js", `module.exports = require("nestjs-project-configs/stylelint.config.js");`);
-writeFileIfNotExists("lint-staged.config.js", `module.exports = require("nestjs-project-configs/lint-staged.config.js");`);
+writeFileIfNotExists(".eslintrc.js", `module.exports = require("../../eslint.config.js");`);
+writeFileIfNotExists(".prettierrc.js", `module.exports = require("../../prettier.config.js");`);
+writeFileIfNotExists(".stylelintrc.js", `module.exports = require("../../stylelint.config.js");`);
+writeFileIfNotExists("lint-staged.config.js", `module.exports = require("../../lint-staged.config.js");`);
 
 // Inicializar Husky y hooks
 try {
